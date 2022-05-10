@@ -44,3 +44,34 @@ Average case: The number sought is in the middle
 2 - [3,5,7,8,2,9,4,15,6]
 3 - [3,5,7,8,2,9,4,15,6]
 4 - [2,3,5,7,8,9,4,15,6]
+
+
+Project 2:
+[16,21,11,8,12,22] -> Merge Sort
+
+1) Write the stages of the above array according to the sort type.
+2) Write the Big-O notation.
+
+1)
+[16,21,11] - [8,12,22]
+[16] [21,11] - [8] [12,22]
+[16] [21] [11] - [8] [12] [22]
+[16] [11,21] - [8] [12,22]
+[11,16,21] - [8,12,22]
+[8,11,12,16,21,22]
+
+
+2) O(nlogn)
+
+Project 3:
+Write the Binary-Search-Tree stages of the sequence [7, 5, 1, 8, 3, 6, 0, 9, 4, 2].
+
+・ To add elements in Binary Search Tree, start from root.
+・ Numbers less than root to the left, larger numbers to the right
+By writing to the side, a tree structure is created.
+
+                          7
+                     5         8
+                1      6           9
+            0     3
+                2   4
